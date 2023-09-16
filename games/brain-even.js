@@ -1,10 +1,8 @@
-import './brain-games.js';
+import getRandomNumber from './common.js';
 
 export const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEvenNumber = (number) => number % 2 === 0;
-
-const getRandomNumber = () => Math.floor(Math.random() * 100);
 
 export const brainEven = () => {
 	const randomNumber = getRandomNumber();
