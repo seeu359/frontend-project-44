@@ -16,7 +16,7 @@ export const brainProgression = () => {
   const randomIndex = getRandomNumber(0, progressionLength - 1);
   const correctAnswer = progression[randomIndex];
   progression[randomIndex] = '..';
-  const question = progression.join(' ');
+  const question = `Question: ${progression.join(' ')}`;
 
   return [question, (correctAnswer).toString()];
 };
