@@ -20,7 +20,7 @@ const getMaxDivisor = (number1, number2) => {
 export const brainGcd = () => {
   const randomNumber1 = getRandomNumber(60);
   const randomNumber2 = getRandomNumber(60);
-  const question = `Question ${randomNumber1} ${randomNumber2}`;
+  const question = `Question: ${randomNumber1} ${randomNumber2}`;
   const correctAnswer = getMaxDivisor(randomNumber1, randomNumber2);
   return [question, (correctAnswer).toString()];
 };
